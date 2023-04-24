@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan Alicea">
+    <title>Mount Moon Resort | Contact</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Mount Moon Resort</h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="images/swiss-valley.jpg" alt="Picture of a forest in the mountainous swiss valley during the day.">
+    </header>
+    <main>
+        <div id="contact">
+            <section id="message">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p>Required fields marked with a *</p>
+                <img src="images/swiss-peak.jpg" alt="A picture of one of the many great mountains that surrounds our resort surrounded by a thick forest.">
+            </section>
+            <form method="post" action= "https://wp.zybooks.com/form-viewer.php">
+                <p>
+                    <label for="name">*Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">*Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">*Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="comments">*Comments:</label>
+                    <textarea name="textarea" id="comments" cols="25" rows="5" required></textarea>
+                </p>
+
+                <h3>Preferred Contact Method</h3>
+                <div id="preferred">
+                    <div>
+                        <input type="radio" name="preferred" value="e-mail" id="mail">
+                        <label for="mail">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="preferred" value="phone_num" id="num">
+                        <label for="num">Phone</label>
+                    </div>
+                </div>
+
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy;2023 - Mount Moon Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>   
+</body>
+</html>
